@@ -1,0 +1,25 @@
+{
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "rewrites": [{
+            "source": "/",
+            "destination": "/portfolio-responsive-complete-main/index.html"
+        },
+        {
+            "source": "/assets/:path*",
+            "destination": "/portfolio-responsive-complete-main/assets/:path*"
+        }
+    ],
+    "headers": [{
+        "source": "/(.*)",
+        "headers": [{
+                "key": "X-Content-Type-Options",
+                "value": "nosniff"
+            },
+            {
+                "key": "Referrer-Policy",
+                "value": "strict-origin-when-cross-origin"
+            }
+        ]
+    }]
+}
