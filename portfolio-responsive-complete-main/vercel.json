@@ -1,6 +1,20 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/assets/:path*",
+      "destination": "/portfolio-responsive-complete-main/assets/:path*"
+    },
+    {
+      "source": "/portfolio-responsive-complete-main",
+      "destination": "/portfolio-responsive-complete-main/index.html"
+    },
+    {
+      "source": "/",
+      "destination": "/portfolio-responsive-complete-main/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
